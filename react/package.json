@@ -1,0 +1,21 @@
+{
+  "name": "@traceurs/core",
+  "version": "0.0.0",
+  "description": "Fetch your data, eagerly.",
+  "private": true,
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brooooooklyn/traceurs.git"
+  },
+  "keywords": ["React", "SSR", "fetch", "axios"],
+  "author": "lynweklm@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brooooooklyn/traceurs/issues"
+  },
+  "homepage": "https://github.com/Brooooooklyn/traceurs#readme",
+  "devDependencies": {
+    "@traceurs/fetch": "0.0.0"
+  }
+}

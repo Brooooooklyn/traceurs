@@ -1,0 +1,18 @@
+{
+  "name": "@traceurs/fetch",
+  "version": "0.0.0",
+  "description": "Traceurs bullet for fetch.",
+  "private": true,
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brooooooklyn/traceurs.git"
+  },
+  "keywords": ["React", "SSR", "fetch", "axios"],
+  "author": "lynweklm@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brooooooklyn/traceurs/issues"
+  },
+  "homepage": "https://github.com/Brooooooklyn/traceurs#readme"
+}

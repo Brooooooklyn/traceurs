@@ -1,6 +1,6 @@
 # traceurs
 
-> The name `traceurs` is from ***Obus traceurs*** in **French** · ***Flame tracer*** in **English** · ***曳光弹***.
+> The name `traceurs` is from **_Obus traceurs_** in **French** · **_Flame tracer_** in **English** · **_曳光弹_**.
 
 Fetch your data eagerly, follow on the `FCP`.
 
@@ -9,15 +9,15 @@ Fetch your data eagerly, follow on the `FCP`.
 ```tsx
 // server.tsx
 
-import { Dye } from '@traceurs/core'
+import { Dye } from '@traceurs/react'
 import { createBullet } from '@traceurs/fetch'
+
+import { requestRecommend, requestUserList } from '@app/client'
 
 function render() {
   const bullet = createBullet()
-  bullet.loaded('/api/v1/users/recommend', {
-    method: 'POST'
-  })
-  bullet.loaded('/api/v1/videos/recommend')
+  bullet.loaded(requestRecommend)
+  bullet.loaded(requestUserList)
 
   return renderHtml(bullet)
 }
@@ -37,9 +37,8 @@ function renderHtml(bullet) {
 // client.ts
 import { createFetch } from '@traceurs/fetch'
 
-// params need to be same with `loaded` in server.tsx
-createFetch(fetch)('/api/v1/users/recommend', {
-  method: 'POST'
+export const requestRecommend = createFetch(fetch)('/api/v1/users/recommend', {
+  method: 'POST',
 })
 ```
 
@@ -53,7 +52,7 @@ createFetch(fetch)('/api/v1/users/recommend', {
       window.__traceurs__ = requestMap
 
       requestMap[k1] = fetch(k1, {
-        method: 'POST'
+        method: 'POST',
       })
       requestMap[k2] = fetch(k2)
     </script>

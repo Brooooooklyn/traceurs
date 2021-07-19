@@ -1,0 +1,65 @@
+{
+  "name": "traceurs",
+  "version": "0.0.0",
+  "description": "Fetch your data, eagerly.",
+  "private": true,
+  "scripts": {
+    "format": "run-p format:md format:json format:source format:yml",
+    "format:json": "prettier --parser json --write \"**/*.json\"",
+    "format:md": "prettier --parser markdown --write \"./*.md\" \"./**/*.md\"",
+    "format:source": "prettier --config ./package.json \"./**/*.{ts,tsx,js}\" --write",
+    "format:yml": "prettier --parser yaml --write \"./*.{yml,yaml}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brooooooklyn/traceurs.git"
+  },
+  "keywords": ["React", "SSR", "fetch", "axios"],
+  "author": "lynweklm@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brooooooklyn/traceurs/issues"
+  },
+  "homepage": "https://github.com/Brooooooklyn/traceurs#readme",
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@commitlint/config-lerna-scopes": "^12.1.4",
+    "@swc-node/register": "^1.3.2",
+    "@types/node": "^16.3.2",
+    "@types/react-dom": "^17.0.9",
+    "@types/sinon": "^10.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "codecov": "^3.8.2",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-sonarjs": "^0.9.1",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.0.1",
+    "lodash": "^4.17.21",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rxjs": "^7.2.0",
+    "shx": "^0.3.3",
+    "sinon": "^11.1.1",
+    "ts-node": "^10.1.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "arrowParens": "always",
+    "parser": "typescript"
+  }
+}
