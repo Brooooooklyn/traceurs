@@ -18,7 +18,7 @@ importers:
       eslint: ^7.30.0
       eslint-config-prettier: ^8.3.0
       eslint-plugin-import: ^2.23.4
-      eslint-plugin-prettier: ^3.4.0
+      eslint-plugin-prettier: ^4.0.0
       eslint-plugin-react: ^7.24.0
       eslint-plugin-react-hooks: ^4.2.0
       eslint-plugin-sonarjs: 0.13.0
@@ -50,7 +50,7 @@ importers:
       eslint: 7.30.0
       eslint-config-prettier: 8.3.0_eslint@7.30.0
       eslint-plugin-import: 2.23.4_9d4ab2a0eeed6edbe2d408500f2a8fc9
-      eslint-plugin-prettier: 3.4.0_0470f3bcd018a045da11d0bbb868d6c6
+      eslint-plugin-prettier: 4.2.1_0470f3bcd018a045da11d0bbb868d6c6
       eslint-plugin-react: 7.24.0_eslint@7.30.0
       eslint-plugin-react-hooks: 4.2.0_eslint@7.30.0
       eslint-plugin-sonarjs: 0.13.0_eslint@7.30.0
@@ -1684,13 +1684,13 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-prettier/3.4.0_0470f3bcd018a045da11d0bbb868d6c6:
-    resolution: {integrity: sha512-UDK6rJT6INSfcOo545jiaOwB701uAIt2/dR7WnFQoGCVl1/EMqdANBmwUaqqQ45aXprsTGzSa39LI1PyuRBxxw==}
-    engines: {node: '>=6.0.0'}
+  /eslint-plugin-prettier/4.2.1_0470f3bcd018a045da11d0bbb868d6c6:
+    resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
+    engines: {node: '>=12.0.0'}
     peerDependencies:
-      eslint: '>=5.0.0'
+      eslint: '>=7.28.0'
       eslint-config-prettier: '*'
-      prettier: '>=1.13.0'
+      prettier: '>=2.0.0'
     peerDependenciesMeta:
       eslint-config-prettier:
         optional: true
