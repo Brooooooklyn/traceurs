@@ -39,7 +39,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-sonarjs": "0.13.0",
+    "eslint-plugin-sonarjs": "0.25.1",
     "husky": "^7.0.1",
     "lint-staged": "^11.0.1",
     "lodash": "^4.17.21",
